@@ -1,4 +1,5 @@
 import 'package:belajar/switch_animated_switch_page.dart';
+import 'package:belajar/animated_padding.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,8 +18,16 @@ class HomePage extends StatelessWidget {
                     return AnimatedSwitch();
                   }));
                 },
-                child: Text('GO TO SWITCH AND ANIMATED SWITCH PAGE'), 
-            )
+              child: Text('GO TO SWITCH AND ANIMATED SWITCH PAGE'), 
+            ),
+            ElevatedButton(
+              onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return AnimatedPaddingPage();
+                  }));
+                },
+              child: Text('GO TO ANIMATED PADDING PAGE'), 
+            ),
           ],
         ),
       ),
