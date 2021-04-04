@@ -1,3 +1,4 @@
+import 'package:belajar/shared_preference_page.dart';
 import 'package:belajar/switch_animated_switch_page.dart';
 import 'package:belajar/animated_padding.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +28,14 @@ class HomePage extends StatelessWidget {
                   }));
                 },
               child: Text('GO TO ANIMATED PADDING PAGE'), 
+            ),
+            ElevatedButton(
+              onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return SharedPreferencePage();
+                  }));
+                },
+              child: Text('GO TO SHARED PREFERENCE PAGE'), 
             ),
           ],
         ),
