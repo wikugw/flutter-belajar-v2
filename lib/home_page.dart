@@ -1,3 +1,4 @@
+import 'package:belajar/provider_state_management_page.dart';
 import 'package:belajar/shared_preference_page.dart';
 import 'package:belajar/switch_animated_switch_page.dart';
 import 'package:belajar/animated_padding.dart';
@@ -36,6 +37,14 @@ class HomePage extends StatelessWidget {
                   }));
                 },
               child: Text('GO TO SHARED PREFERENCE PAGE'), 
+            ),
+            ElevatedButton(
+              onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return ProvideStateManagementPage();
+                  }));
+                },
+              child: Text('GO TO PROVIDER STATE MANAGEMENT PAGE'), 
             ),
           ],
         ),
